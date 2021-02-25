@@ -3,5 +3,5 @@ variable "instance_size" {
 }
 
 variable "ami" {
-default = "ami-09246ddb00c7c4fef (64-bit x86)"
+default = "ami-09246ddb00c7c4fef"
 }
