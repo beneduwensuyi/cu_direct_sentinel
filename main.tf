@@ -4,8 +4,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-09246ddb00c7c4fef (64-bit x86)"
-  instance_type = "t3.micro"
+  ami           = var.ami
+  instance_type = var.instance_size
 
   tags = {
     Name = "HelloWorld"
